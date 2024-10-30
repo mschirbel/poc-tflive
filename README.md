@@ -16,11 +16,13 @@ This project uses Terragrunt to manage Terraform configurations for deploying an
 ## Structure
 
 The repository is structured as follows:
+```
 .
 ├── live-infrastructure/
 │ └── terragrunt.hcl
 ├── secrets.yaml (encrypted)
 └── region.hcl
+```
 
 
 ## Configuration
