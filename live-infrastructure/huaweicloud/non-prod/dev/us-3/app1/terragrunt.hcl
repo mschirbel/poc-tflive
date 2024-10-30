@@ -15,8 +15,7 @@ terraform {
 }
 
 inputs = {
-  create_obs_bucket = true
+  create_obs_bucket   = true
   create_rds_instance = false
-
-  name = "app1"
+  name                = "app1"
 }

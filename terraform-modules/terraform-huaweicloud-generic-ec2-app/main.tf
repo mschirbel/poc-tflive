@@ -50,7 +50,7 @@ resource "huaweicloud_rds_instance" "instance" {
 
   volume {
     type = "ULTRAHIGH"
-    size = 100
+    size = 200
   }
 
   backup_strategy {
