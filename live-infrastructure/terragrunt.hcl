@@ -1,6 +1,8 @@
 locals {
   secret_vars = yamldecode(sops_decrypt_file(find_in_parent_folders("secrets.yaml")))
   region_vars = read_terragrunt_config(find_in_parent_folders("region.hcl"))
+
+  aws_region = local.region_vars.locals.aws_region
 }
 
 # Generate an AWS provider block
